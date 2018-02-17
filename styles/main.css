@@ -1,0 +1,131 @@
+body{
+    font-family: 'Jaldi', sans-serif;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#212121+0,a30822+100 */
+    background: #212121; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #212121 0%, #a30822 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #212121 0%,#a30822 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #212121 0%,#a30822 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#212121', endColorstr='#a30822',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    display: flex
+}
+
+/* Form stuff */
+
+.mainContainer{
+    width: 50vw;
+    padding-left: 30px;
+    width: auto;
+    height: auto;
+    display: inline-block;
+}
+.formHeader{
+    margin: 20px;
+    font-size: 24px;
+    color: #D71644;
+}
+.formContainer{
+    margin: 20px;
+    padding-left: 30px;
+    border-left: 4px solid #D71644;
+}
+.formContainer form p {
+    font-family: 'Jaldi', sans-serif;
+    clear:both;
+    margin: 0px;
+    font-weight: 600;
+    font-size: 22px;
+    color: #D71644;
+}
+.input{
+    margin-bottom: 20px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid #D71644;
+    color: #FFFFFF;
+    clear:both;
+    height: 5vh;
+    font-size: 20px;
+}
+.input[type="date"]{
+    width: auto;
+}
+.input select {
+    background: #212121; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #212121 0%, #a30822 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #212121 0%,#a30822 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #212121 0%,#a30822 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#212121', endColorstr='#a30822',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.input::placeholder{
+    font-style: italic;
+    color: #FFFFFF;
+}
+#ddl option {
+    background-color: #212121;
+}
+.ddlPlaceholder{
+    font-style: italic;
+}
+.button{
+    padding: 20px;
+    font-size: 26px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border: 4px solid #ffffff;
+    color: white;
+    font-family: 'Jaldi', sans-serif;
+}
+.button:hover{
+    border: 4px solid #D71644;
+    cursor: pointer;
+}
+
+/* wows stuff */
+
+#wows{
+    display: inline-block;
+    padding-top: 20vh;
+    margin-left: 10vw;
+    width: 40vw;
+    text-align: center;
+}
+
+.wowtxt{ 
+
+    text-align: right;
+    border-right: 4px solid #FFFFFF;
+    font-family: 'Jaldi', sans-serif;
+    font-size: 32px;
+    font-style: italic;
+    color: white;
+    padding-right: 20px;
+
+}
+
+@media only screen and (max-width: 500px) {
+    #wows{
+        display: none;
+    }
+    .mainContainer{
+        width: 100vw;
+        padding: 5px;
+    }
+    .formHeader{
+        margin: 10px;
+    }
+    .formHeader h1{
+        font-size:38px;
+    }
+    .formContainer{
+        border-left: none;
+        border-top: 2px solid #D71644;
+        padding: 25px 0 0 0;
+        margin: 10px;
+    }
+    .button{
+    
+        width: 90vw;
+    }
+}

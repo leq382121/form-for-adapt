@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adapt Form</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Applying to Adapt">
+    <meta name="keywords" content="Form, Adapt, Application, SEO">
+    <meta name="author" content="Liutauras Razma">
+    <meta name='apple-mobile-web-app-status-bar-style' content='black'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/normalize.css" />
+    <link href="https://fonts.googleapis.com/css?family=Jaldi" rel="stylesheet">
+</head>
+<body>
+   
+        <div class="mainContainer">
+
+            <div class="formHeader">
+                <h1>Tell a story of yours <br/> and let's stay in touch!</h1>
+            </div>
+
+            <div class="formContainer">
+                <form id="formTag" onsubmit="return submitting()">
+                    <p> Hello, my full name is </p>
+                    <input class="input" type="text" name="name" placeholder="Enter first and last name" onkeypress="this.style.width = ((this.value.length * 16) + 8) + 'px';" onfocusout="useName()"  required>
+                    
+                    <p> and we can reach each other using </p>
+                    <input class="input" type="text" name="email" placeholder="Type your email" onkeypress="this.style.width = ((this.value.length * 16) + 8) + 'px';" onfocusout="checkEmail()" required>
+                    
+                    <p>My birthday is </p>
+                    <input class="input" type="date" name="birthday" placeholder="Date of your birth" required onfocusout="useDate()">
+                    
+                    <p> and I really like </p>
+                    <input class="input" type="text" name="brands" placeholder="Type 5 brands you like" onkeypress="this.style.width = (this.value.length * 12) + 'px';" >  
+                    
+                    <p> To make it more interesting, I am more into</p>
+                    <select class="input" id="ddl">
+                        <option class="ddlPlaceholder" value="" disabled selected>Choose your interest..</option>
+                        <option class="ddlValue" value="1">Science</option>
+                        <option class="ddlValue" value="2">Events</option>
+                        <option class="ddlValue" value="3">Advertisement</option>
+                        <option class="ddlValue" value="4">Politics</option>
+                    </select>
+
+                    <br/><br/>
+                    
+                    <input class="button" type="submit" value="Submit a story" onsubmit="facts()">
+                </form>
+            </div>
+
+        </div>
+
+        <div id="wows"></div>
+    
+
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
